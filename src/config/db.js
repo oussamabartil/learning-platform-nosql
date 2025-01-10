@@ -38,7 +38,7 @@ async function connectRedis() {
     }
     return redisClient;
   }catch(error){
-    console.error('erreur lors de la connection a redis ',error);
+    console.error('Erreur lors de la connection a redis ',error);
     throw error;
   }
 
