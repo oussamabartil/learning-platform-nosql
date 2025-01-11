@@ -15,7 +15,16 @@ async function insertOne(collection, data) {
   const database = await db.connectMongo();
   return await database.collection(collection).insertOne(data);
 }
+
+//Statistiques 
+async function countDocuments(collectionName, query = {}) {
+  const database = await db.connectMongo();
+  return await database.collection(collectionName).countDocuments(query);
+}
 // Export des services
 module.exports = {
   // TODO: Exporter les fonctions utilitaires
+  findOneById,
+  insertOne,
+  countDocuments
 };
