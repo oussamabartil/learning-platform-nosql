@@ -68,6 +68,10 @@ async function getCourse(req, res) {
   }
 }
 
+
+//avoir les statistique nbr des cours existant dans la BD
+
+
 async function getCourseStats(req, res) {
   try {
     //implementer des statistiques 
