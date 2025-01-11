@@ -58,3 +58,15 @@ Je vous propose une structure de code qui suit les bonnes pratiques de développ
 5. Documentez vos choix et vos réflexions en ajoutant des copies d'écrans à votre fichier README.md
 
 #### Bon courage
+
+### Réponse des questions des commentaires
+##### Question : #####
+Pourquoi créer un module séparé pour les connexions aux bases de données ?
+### Réponse : ###
+Afin d'isoler la logique de connexion et aussi de partager la meme connection dans toute application (facilite aussi reutilisabilite et mantenabilite de code )
+
+##### Question : #####
+ Comment gérer proprement la fermeture des connexions ?
+### Réponse : ### 
+Avant arret de application il faut qu'uo appel la methodes de fermeture de connection comme mongoClient.close(),redisClient.close()... 
+
