@@ -10,6 +10,11 @@ async function findOneById(collection, id) {
   return await database.collection(collection).findOne({_id:new ObjectId(id)});
 }
 
+//ajouter insertion 
+async function insertOne(collection, data) {
+  const database = await db.connectMongo();
+  return await database.collection(collection).insertOne(data);
+}
 // Export des services
 module.exports = {
   // TODO: Exporter les fonctions utilitaires
