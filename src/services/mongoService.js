@@ -1,7 +1,10 @@
 // Question: Pourquoi créer des services séparés ?
-// Réponse: 
+// Réponse: Pour regrouper la logique d’accès aux données (CRUD) ou traitement complexe 
+//          dans un endroit central, réutilisable par plusieurs contrôleurs.
+
 
 const { ObjectId } = require('mongodb');
+const db = require('../config/db');
 
 // Fonctions utilitaires pour MongoDB
 async function findOneById(collection, id) {
