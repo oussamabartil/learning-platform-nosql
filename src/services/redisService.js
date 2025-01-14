@@ -24,5 +24,6 @@ async function cacheData(key, data, ttl) {
   }
   module.exports = {
     // TODO: Exporter les fonctions utilitaires
-    
+    cacheData,
+    getData
   };
