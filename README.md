@@ -43,24 +43,25 @@ Créez un fichier .env à la racine du projet avec les paramètres suivants :
 ## Structure du Projet
 Voici la structure du code avec une description de chaque dossier et fichier :
       ```bash
-         ├── src
-         │   ├── config
-         │   │   ├── db.js                # Connexions aux bases de données
-         │   │   ├── env.js               # Validation des variables d'environnement
-         │   ├── controllers
-         │   │   ├── courseController.js  # Logique métier des cours
-         │   │   ├── studentController.js # Logique métier des étudiants
-         │   ├── routes
-         │   │   ├── courseRoutes.js      # Routes liées aux cours
-         │   │   ├── studentRoutes.js     # Routes liées aux étudiants
-         │   ├── services
-         │   │   ├── mongoService.js      # Services MongoDB
-         │   │   ├── redisService.js      # Services Redis
-         │   ├── app.js                   # Point d'entrée de l'application
-         ├── .env                         # Fichier de configuration des variables d'environnement
-         ├── .gitignore                   # Fichiers/dossiers à ignorer par Git
-         ├── package.json                 # Dépendances et scripts du projet
-         └── README.md                    # Documentation du projet
+      ├── src
+      │   ├── config
+      │   │   ├── db.js # Connexions aux bases de données
+      │   │   ├── env.js # Validation des variables d'environnement
+      │   ├── controllers
+      │   │   ├── courseController.js # Logique métier des cours
+      │   │   ├── studentController.js # Logique métier des étudiants
+      │   ├── routes
+      │   │   ├── courseRoutes.js # Routes liées aux cours
+      │   │   ├── studentRoutes.js # Routes liées aux étudiants
+      │   ├── services
+      │   │   ├── mongoService.js # Services MongoDB
+      │   │   ├── redisService.js # Services Redis
+      │   ├── app.js # Point d'entrée de l'application
+      ├── .env # Fichier de configuration des variables d'environnement
+      ├── .gitignore # Fichiers/dossiers à ignorer par Git
+      ├── package.json # Dépendances et scripts du projet
+      └── README.md # Documentation du projet
+
 
 
 ## Choix Techniques
