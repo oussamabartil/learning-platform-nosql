@@ -73,9 +73,19 @@ async function getCourse(req, res) {
 
 
 async function getCourseStats(req, res) {
+  // try {
+  //   //implementer des statistiques 
+  //   const stats = await mongoService.countDocuments('courses');
+  //   return res.status(200).json({ totalCourses: stats });
+  // } catch (error) {
+  //   console.error('[getCourseStats] error:', error);
+  //   return res.status(500).json({ error: 'Erreur de serveur ' });
+  // }
+
   try {
-    //implementer des statistiques 
+    console.log('Fetching course stats...');
     const stats = await mongoService.countDocuments('courses');
+    console.log('Total courses:', stats);
     return res.status(200).json({ totalCourses: stats });
   } catch (error) {
     console.error('[getCourseStats] error:', error);

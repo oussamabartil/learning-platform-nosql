@@ -20,9 +20,9 @@ async function insertOne(collection, data) {
 }
 
 //Statistiques 
-async function countDocuments(collectionName, query = {}) {
+async function countDocuments(collectionName) {
   const database = await db.connectMongo();
-  return await database.collection(collectionName).countDocuments(query);
+  return await database.collection(collectionName).countDocuments();
 }
 // Export des services
 module.exports = {

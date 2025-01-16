@@ -13,7 +13,7 @@ async function cacheData(key, data, ttl) {
     // TODO: Implémenter une fonction générique de cache
     const redisClient = await db.connectRedis();
     await redisClient.set(key, JSON.stringify(data), {
-      EX: ttlInSeconds
+      EX: ttl,
     });
   }
   

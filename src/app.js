@@ -6,15 +6,16 @@
 
 
 const express = require('express');
+const cors = require('cors');
 const config = require('./config/env');
 const db = require('./config/db');
 
 const courseRoutes = require('./routes/courseRoutes');
-const studentRoutes = require('./routes/studentRoutes');
+// const studentRoutes = require('./routes/studentRoutes');
 
 const app = express();
 
-app.use(express.json());
+ app.use(express.json());
 
 async function startServer() {
   try {
