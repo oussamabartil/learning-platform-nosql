@@ -55,6 +55,8 @@ async function closeConnections() {
     console.log('Redis connection fermer');
   }
 }
+
+
 // Export des fonctions et clients
 module.exports = {
   // TODO: Exporter les clients et fonctions utiles

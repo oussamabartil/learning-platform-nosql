@@ -24,10 +24,27 @@ async function countDocuments(collectionName) {
   const database = await db.connectMongo();
   return await database.collection(collectionName).countDocuments();
 }
+async function findAll(collectionName) {
+  const database =await db.connectMongo();
+  return await database.collection(collectionName).find().toArray();
+}
+
+async function updateOne(collectionName, filter, update) {
+  const database =await db.connectMongo();
+  return await database.collection(collectionName).updateOne(filter, update);
+}
+
+async function deleteOne(collectionName, filter) {
+  const database =await db.connectMongo();
+  return await database.collection(collectionName).deleteOne(filter);
+}
 // Export des services
 module.exports = {
   // TODO: Exporter les fonctions utilitaires
   findOneById,
   insertOne,
-  countDocuments
+  countDocuments,
+  findAll,
+  updateOne,
+  deleteOne
 };

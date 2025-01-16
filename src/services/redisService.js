@@ -22,8 +22,14 @@ async function cacheData(key, data, ttl) {
     const cachedData = await redisClient.get(key);
     return cachedData; // c'est du JSON stringifié
   }
+
+  async function deleteData(key) {
+    const redisClient = await db.connectRedis();
+    await redisClient.del(key);
+  }
   module.exports = {
     // TODO: Exporter les fonctions utilitaires
     cacheData,
-    getData
+    getData,
+    deleteData
   };
