@@ -175,11 +175,4 @@ Afin de separer la configuration du code et evitter de commiter les information 
 Projet développé par **Oussama BARTIL** dans le cadre du projet de fin de module **NoSQL**.
 
 
-### Réponse des questions des commentaires
-##### Question : #####
-
-### Réponse : ###
-
-##### Question : #####
-### Réponse : ### 
 
